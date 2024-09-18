@@ -31,3 +31,5 @@ adb on /dev/usb-ffs/adb type functionfs (rw,relatime)
 - `smartpro_rom.tar.gz`: Dumped from `/rom`, basicly the rootfs, see [The OpenWrt Flash Layout](https://openwrt.org/docs/techref/flash.layout#explanations).
   `/rom/etc/rc.d/S99runtrimui` is the entry point of customization, it will run
   all scripts under `/mnt/SDCARD/System/starts` at startup.
+- [jaxvanyang/smartpro](https://hub.docker.com/r/jaxvanyang/smartpro): Docker
+  image built from `smartpro_rom.tar.gz`. It may be useful for testing.
